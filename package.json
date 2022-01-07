@@ -1,0 +1,16 @@
+{
+  "name": "subgraph",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "auth": "graph auth --product hosted-service 45a2c7e73d6d49b89ebf5461286eb120",
+    "deploy": "graph deploy CuraSubgraph --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ --access-token 45a2c7e73d6d49b89ebf5461286eb120"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.25.1",
+    "@graphprotocol/graph-ts": "^0.24.1"
+  }
+}

@@ -1,0 +1,14 @@
+type NFT @entity {
+  id: ID!
+  owner_id: String
+  creator: String
+  prev_owner: String
+  metadata: NFTMetadata
+}
+
+type NFTMetadata @entity {
+  id: ID!
+  title: String
+  media: String
+  token: NFT
+}
